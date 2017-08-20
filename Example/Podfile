@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CDNetService_Example' do
+  pod 'CDNetService', :path => '../'
+
+  target 'CDNetService_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
