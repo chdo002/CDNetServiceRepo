@@ -7,6 +7,7 @@
 //
 
 #import "CDViewController.h"
+#import <CDNetService/Loader.h>
 
 @interface CDViewController ()
 
@@ -17,7 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    [Loader checkIfReach];
+	
 }
 
 - (void)didReceiveMemoryWarning
